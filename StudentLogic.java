@@ -14,7 +14,7 @@ public class StudentLogic {
 
 	public void readFile() {
 		try {			
-			Scanner input = new Scanner(new File("C:\\Users\\John\\Desktop\\CB6 files\\weekly 3\\Lab3_Names.txt"));
+			Scanner input = new Scanner(new File("C:\\Users\\John\\Desktop\\CB6 files\\weekly 3\\StudentNames.txt"));
 			input.useDelimiter(",|\n");
 
 			input.nextLine();
