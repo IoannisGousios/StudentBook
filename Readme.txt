@@ -1,0 +1,1 @@
+A simple programm that populates an ArrayList by reading an external txt. Then gives the user the options to sort the array by LastName, Age or Telephone, print the student list, search for a specific student or edit the student's conduct.
