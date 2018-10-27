@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-
+import java.util.stream.Collectors;
 
 
 
@@ -14,8 +14,8 @@ public class StudentLogic {
 
 	public void readFile() {
 		try {			
-			Scanner input = new Scanner(new File("C:\\Users\\John\\Desktop\\CB6 files\\weekly 3\\StudentNames.txt"));
-			input.useDelimiter(",|\n");
+			Scanner input = new Scanner(new File("C:\\Users\\John\\Desktop\\CB6 files\\weekly 3\\Lab3_Names.txt"));
+			input.useDelimiter(",\\s*|\r\n");
 
 			input.nextLine();
 			while(input.hasNext()) {
@@ -92,9 +92,10 @@ public class StudentLogic {
 			if (name.equals(student.getLastName())) {
 				System.out.println(student);
 				break;
+
 			}			 
 		}
-}
+	}
 
 
 	public void startApp() {
